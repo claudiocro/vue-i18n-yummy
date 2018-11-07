@@ -13,6 +13,12 @@ export function install(Vue) {
     }
   });
 
+  Object.defineProperty(Vue.prototype, "$i18n", {
+    get() {
+      return this._i18n;
+    }
+  });
+
   Vue.prototype.$t = function() {
     return this._i18n.t();
   };

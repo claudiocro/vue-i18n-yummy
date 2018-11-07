@@ -1,7 +1,7 @@
 {
   "name": "vue-i18n-yummy",
   "version": "0.0.0-development",
-  "private": true,
+  "private": false,
   "main": "./dist/vue-i18n-yummy.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",

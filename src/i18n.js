@@ -17,7 +17,7 @@ export default class I18n {
   }
 
   set locale(l) {
-    return this._vm.$set(this._vm, "locale", l);
+    this._vm.locale = l;
   }
 
   t() {
