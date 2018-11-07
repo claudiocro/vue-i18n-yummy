@@ -1,13 +1,11 @@
-import { expect } from 'chai';
-import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import Vue from "vue";
+import { expect } from "chai";
+import { install } from "../../src/install";
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).to.include(msg);
+describe("vue-i18n-yummy", () => {
+  it("be present after install", () => {
+    expect(new Vue().$t).to.be.undefined;
+    Vue.use({ install });
+    expect(new Vue().$t).to.be.not.undefined;
   });
 });
