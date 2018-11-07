@@ -5,7 +5,7 @@
   "main": "./dist/vue-i18n-yummy.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-i18n-yummy ./src/install.js",
+    "build": "vue-cli-service build --target lib --name vue-i18n-yummy ./src/i18n.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
