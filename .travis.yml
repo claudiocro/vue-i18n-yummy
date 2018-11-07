@@ -9,6 +9,17 @@ node_js:
 after_success:
   - npm run semantic-release
   - npm run coveralls
+  - npm run docs:build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist
+  github-token: $GH_TOKEN
+  repo: claudiocro/vue-i18n-yummy
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: master
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
