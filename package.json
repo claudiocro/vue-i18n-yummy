@@ -7,7 +7,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-i18n-yummy ./src/i18n.js",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "nyc vue-cli-service test:unit",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "semantic-release": "semantic-release"
@@ -23,16 +24,34 @@
     "@vue/eslint-config-airbnb": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-istanbul": "^5.1.0",
     "chai": "^4.1.2",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17",
-    "vuepress": "^0.14.4",
+    "nyc": "^13.1.0",
     "semantic-release": "^15.10.8",
-    "travis-deploy-once": "^5.0.9"
+    "travis-deploy-once": "^5.0.9",
+    "vue-template-compiler": "^2.5.17",
+    "vuepress": "^0.14.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/claudiocro/vue-i18n-yummy.git"
+  },
+  "nyc": {
+    "check-coverage": false,
+    "per-file": true,
+    "include": [
+      "src/**/*.{js,vue}"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "report-dir": "./tests/unit/coverage",
+    "temp-directory": "./tests/unit/coverage/.nyc_output",
+    "cache": true,
+    "all": true
   }
 }
