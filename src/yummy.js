@@ -1,3 +1,8 @@
+// code by:
+// https://github.com/WebReflection/i18n-yummy
+// https://github.com/WebReflection/i18n-utils
+// https://codeburst.io/easy-i18n-in-10-lines-of-javascript-poc-eb9e5444d71e
+
 export default function i18n(locale) {
   return function(template) {
     for (
