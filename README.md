@@ -1,34 +1,13 @@
 # vue-i18n-yummy
 
-## Project setup
-```
-npm install
-```
+[![Build Status](https://travis-ci.org/claudiocro/vue-i18n-yummy.svg?branch=master)](https://travis-ci.org/claudiocro/vue-i18n-yummy) [![Coverage Status](https://coveralls.io/repos/github/claudiocro/vue-i18n-yummy/badge.svg?branch=master)](https://coveralls.io/github/claudiocro/vue-i18n-yummy?branch=master) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Inspired by:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- https://codeburst.io/easy-i18n-in-10-lines-of-javascript-poc-eb9e5444d71e
+- https://github.com/WebReflection/i18n-yummy
+- https://github.com/WebReflection/i18n-utils
 
-### Run your tests
-```
-npm run test
-```
+# Documentation
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [here](https://claudiocro.github.io/vue-i18n-yummy/)
